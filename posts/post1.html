@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to secure yourself online | Extension and Outreach Activites</title>
+    <meta name="author" content="yashraj">
+    <meta name="description" content="">
+
+    <!-- Tailwind -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+        .font-family-karla {
+            font-family: karla;
+        }
+    </style>
+    <link rel="shortcut icon" href="/images/DTU logo.png" type="image/x-icon">
+    <!-- AlpineJS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="text-gray-600 body-font bg-blue-300">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img src="/images/DTU logo.png" alt="logo" srcset="" width="50" height="50">
+            <span class="ml-3 text-xl">Delhi Technological University</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="/index.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="/about us.html" class="mr-5 hover:text-gray-900">About Us</a>
+            <a href="/ongoing projects.html" class="mr-5 hover:text-gray-900">Ongoing projects</a>
+            <a href="/upcoming projects.html" class="mr-5 hover:text-gray-900">Upcoming projects</a>
+            <a href="/blogpost.html" class="mr-5 hover:text-gray-900">Blogs</a>
+            <a href="/join us.html" class="mr-5 hover:text-gray-900">Join Us</a>
+          </nav>
+        </div>
+    </header>
+
+    <!-- Text Header -->
+    <header class="w-full container mx-auto">
+        <div class="flex flex-col items-center py-12">
+            <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="#">
+                Blogs by seniors who work before
+            </a>
+            <p class="text-lg text-gray-600 ">
+                browse them and find your area of interest
+            </p>
+        </div>
+      </header>
+
+    <!-- Topic Nav -->
+    <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
+        <div class="block sm:hidden">
+            <a
+                href="#"
+                class="block md:hidden text-base font-bold uppercase text-center  justify-center items-center"
+                @click="open = !open"
+            >
+                Topics <i :class="open ? 'fa-chevron-down': 'fa-chevron-up'" class="fas ml-2"></i>
+            </a>
+        </div>
+        <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Teaching</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Healthcare</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Seminars</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Camps</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Environment</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Donation</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mx-auto flex flex-wrap py-6">
+
+        <!-- Post Section -->
+        <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+
+            <article class="flex flex-col shadow my-4">
+                <!-- Article Image -->
+                <!-- <a href="#" class="hover:opacity-75"> -->
+                    <img src="/images/post_img1.jpg">
+                <!-- </a> -->
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Teaching</a>
+                    <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">How to keep yourself safe on Internet</a>
+                    <p href="#" class="text-sm pb-8">
+                        By <a href="#" class="font-semibold hover:text-gray-800">Yashraj</a>, Published on April 25th, 2022
+                    </p>
+                    <h1 class="text-2xl font-bold pb-3">Introduction</h1>
+                    <p class="pb-3">It's no secret that the internet is home to some shady characters, but staying safe online does't require you to turn your internet off. Instead, stay mindful and take a look at these 10 easy tips for online safety:</p>
+                    <h1 class="text-2xl font-bold pb-3">Don't share personal information.</h1>
+                    <p class="pb-3">It goes without saying that you should never share your passwords, banking information, or address online. But other information, like details about your relationship, could be used to figure out answers to your security questions or even give hackers a tip-off when it comes to guessing your password.
+                    You should also be aware that anything you post may continue to exist online even after you delete it. We've had prospective employers ask about content from our high school blog—and that's been offline for about a decade or longer now.
+                    And do not open emails from stangers. </p>
+                    <h1 class="text-2xl font-bold pb-3">Don't click on strange-looking links</h1>
+                    <p class="pb-3">When checking your email or visiting websites, make sure you know and trust any links before you click on them.
+                    Viruses and other forms of malware often spread because you click on a link from someone you know. If you receive a link that looks strange (for instance, it may have typos in it) from a trusted friend or family member, contact them to ask if the link you've received was sent on purpose. You might have to wait a bit to watch that funny viral video, but better safe than sorry.
+                    One way to tell if a link is safe is to mouse over it. This will show a preview of the full link in your web browser's status bar. Check to make sure the preview link matches the site it should be from—you can verify the correct site link by googling the company name.
+                    For example, if you get an email from Wells Fargo bank and the link preview shows “www.wells-fargo-bank.com,” it doesn't match the correct site link that comes up in Google: “www.wellsfargo.com.” </p>
+                    <h1 class="text-2xl font-bold pb-3">Use strong passwords</h1>
+                    <p class="pb-3">There are several ways to protect yourself from identity theft online, and using strong passwords is one of them. Unfortunately, even now, people still use passwords like “12345678” or “password.” Don't use those, and also don't use your dog's name or your kids' birthdays.</p>
+                    <h1 class="text-2xl font-bold pb-3">Make sure your devices are up to date</h1>
+                    <p class="pb-3">If you don't have your security software, web browsers, and devices set to update automatically, turn on those automatic updates now. Updates often include critical fixes for any security holes that may have been detected in your programs or devices.</p>
+                    <h1 class="text-2xl font-bold pb-3">Back up your data regularly</h1>
+                    <p class="pb-3">If you become a victim of malware, such as ransomware, you might not be able to get your data back. That is, unless you've backed up your data.
+                    When you back up your data, you can make certain kinds of security breaches less problematic. If a hacker encrypts your data and demands a ransom to unencrypt it, it's not going to be that big of a deal if you backed it up a week ago.</p>
+                    <h1 class="text-2xl font-bold pb-3">Conclusion</h1>
+                    <p class="pb-3">ones privacy on the internet is very important because of all the applications, services, scams and viruses on the internet that are waiting for any given chance to steal someone's personal material. If all people could protect themselves and use the right software, they would be much safer, and it would be harder to have personal information stolen from them. Anyone using the internet should take into consideration this information will help them in the future to protect their privacy and maintain security.
+                    It is our responsiblity to get safe and make sure our loved ones are also safe on the internet.
+                    </p>
+                </div>
+            </article>
+
+            <div class="w-full flex pt-6">
+                <a href="#" class="w-1/2 bg-white shadow hover:shadow-md text-left p-6">
+                    <p class="text-lg text-blue-800 font-bold flex items-center"><i class="fas fa-arrow-left pr-1"></i> Previous</p>
+                    <p class="pt-2">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</p>
+                </a>
+                <a href="#" class="w-1/2 bg-white shadow hover:shadow-md text-right p-6">
+                    <p class="text-lg text-blue-800 font-bold flex items-center justify-end">Next <i class="fas fa-arrow-right pl-1"></i></p>
+                    <p class="pt-2">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</p>
+                </a>
+            </div>
+
+            <div class="w-full flex flex-col text-center md:text-left md:flex-row shadow bg-white mt-10 mb-10 p-6">
+                <div class="w-full md:w-1/5 flex justify-center md:justify-start pb-4">
+                    <img src="/profiles/Author1.jfif" class="rounded-full shadow h-32 w-32">
+                </div>
+                <div class="flex-1 flex flex-col justify-center md:justify-start">
+                    <p class="font-semibold text-2xl">Yashraj</p>
+                    <p class="pt-2">A second year Undergraduate student of Environmental banch & have a good knowledge in field of internet.</p>
+                    <div class="flex items-center justify-center md:justify-start text-2xl no-underline text-blue-800 pt-4">
+                        <a class="" href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a class="pl-4" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="pl-4" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="pl-4" href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
+
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">About Us</p>
+                <p class="pb-2">we are the students enrolled in fec-52 (Extension & Outreach activities). we have to write our work online on blog section of the website. here you can find work of students who opt this fec before.</p>
+                <a href="#" class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4">
+                    Get to know us
+                </a>
+            </div>
+
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">Instagram</p>
+                <div class="grid grid-cols-3 gap-3">
+                    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=1">
+                    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=2">
+                    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=3">
+                    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=4">
+                    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=5">
+                    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=6">
+                    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=7">
+                    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=8">
+                    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=9">
+                </div>
+                <a href="#" class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                    <i class="fab fa-instagram mr-2"></i> Follow @yash.raj.athodiya
+                </a>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script>
+        function getCarouselData() {
+            return {
+                currentIndex: 0,
+                images: [
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=1',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=2',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=3',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=4',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=5',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=6',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=7',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=8',
+                    'https://source.unsplash.com/collection/1346951/800x800?sig=9',
+                ],
+                increment() {
+                    this.currentIndex = this.currentIndex === this.images.length - 6 ? 0 : this.currentIndex + 1;
+                },
+                decrement() {
+                    this.currentIndex = this.currentIndex === this.images.length - 6 ? 0 : this.currentIndex - 1;
+                },
+            }
+        }
+    </script>
+<!----------------------------------- main content ends here ------------------------------->
+<footer>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 DTU —
+          <a href="https://github.com/yashrajathodiya" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@yash_raj</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/OEADTU/">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="#">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="#">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="https://in.linkedin.com/in/delhi-technological-university-delhi-397129209?trk=public_post_follow-view-profile&challengeId=AQHLSrCdGWe1wQAAAYB-IPOY4NbPnbgr5UM_TgyYZ97GhPH635ZWsRbJj_RCXbCjNftz-_X3Jb54xeRRK_Fr7sHkp9OU4jvCYQ&submissionId=9f789e3e-92e4-ea16-bf62-d6541c9f0265">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+</footer>
+    <!---------------------------- footer ends --------------------------->
+</body>
+</html>
